@@ -1,0 +1,93 @@
+@use '../../helpers/' as *;
+
+.first-block{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+
+    &__body{
+        margin-bottom: 16px;
+
+        @include tablet_768{
+            display: flex;
+            flex-wrap: wrap;
+            width: 50%;
+            align-content: flex-start;
+        }
+    }
+
+    &__text{
+        overflow: hidden;
+        height: 90px;
+        margin: 0 16px 16px 16px;
+
+        & p{
+            font-family: var(--font-family-regular);
+            font-size: 14px;
+            line-height: 18px;
+            letter-spacing: 0.2px;
+            color: var(--color-main-text);
+
+            @include tablet_768{
+                line-height: 20px;
+            }
+        }
+
+        @include tablet_768{
+          margin: 0 48px 8px 0;
+          height: 160px;
+        }
+    }
+
+    &__read-more{
+        @media screen and (width >= 1062px) {
+            display: none;
+        }
+    }
+
+    &__button{
+        @include reset-button;
+        font-family: var(--font-family-midle);
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+    }
+
+    &__icon{
+        margin-left: 24px;
+        margin-right: 8px;
+
+        @include tablet_768{
+            margin-left: 9px;
+        }
+    }
+
+    &__image{
+        width: 100%;
+
+        & img{
+            width: 100%;
+            height: auto;
+        }
+        
+        @include tablet_768{
+            width: auto;
+            flex-grow: 1;
+        }
+    }
+    
+    @include tablet_768{
+        flex-direction: row;
+        margin-left: 24px;
+        margin-right: 24px;
+        margin-bottom: 32px;
+    }
+
+    @include desktop{
+        flex-direction: row;
+        margin-left: 32px;
+        margin-right: 32px;
+        margin-bottom: 51px;
+        width: 1120px;
+    }
+}

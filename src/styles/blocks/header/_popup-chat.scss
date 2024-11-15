@@ -1,0 +1,131 @@
+@use '../../helpers/' as *;
+
+.popup-chat{
+    position: relative;
+    
+    &__content{
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 320px;
+        height: 100vh;
+        background-color: #ffffff;
+        z-index: 6;
+        border-left: 1px solid #D9FFF5;
+    }
+
+    &__button-close{
+        margin-left: 16px;
+        margin-top: 24px;
+        margin-bottom: 40px;
+    }
+
+    &__title{
+        display: flex;
+        margin-left: 16px;
+        margin-bottom: 24px;
+
+        & p{
+            position: relative;
+            font-family: var(--font-family-bold);
+            font-size: 24px;
+            line-height: 32px;
+            letter-spacing: -0.6px;
+            color: var(--color-main-text);
+
+            &::before{
+                content: '';
+                position: absolute;
+                left: -16px;
+                top: -3px;
+                width: 4px;
+                height: 40px;
+                background-color: #41F6D7;
+                border-top-right-radius: 10px;
+                border-bottom-right-radius: 10px;
+            }
+        }
+
+    }
+    & input{
+        margin-left: 16px;
+        margin-bottom: 16px;
+
+        padding-left: 16px;
+
+        border: 1px solid #EAEAEA;
+        border-radius: 8px;
+
+        height: 48px;
+        width: 288px;
+
+        font-family: var(--font-family-regular);
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+    }
+
+    & textarea{
+        margin-left: 16px;
+        margin-bottom: 16px;
+
+        padding-left: 16px;
+        padding-top: 12px;
+
+        border: 1px solid #EAEAEA;
+        border-radius: 8px;
+
+        width: 288px;
+
+        font-family: var(--font-family-regular);
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+    }
+
+    &__above{
+        margin-left: 16px;
+        margin-bottom: 18px;
+
+        & span{
+            color: #FF3E79;
+        }
+    }
+
+    &__icgo{
+        @include reset-button;
+        position: absolute;
+        width: 136px;
+        height: 32px;
+        right: 16px;
+        padding: 0;
+        background-color: #FF3E79;
+        border-radius: 16px; 
+
+        &::after{
+            position: absolute;
+            top: 50%;
+            right: 16px;
+            content: '';
+            display: block;
+            width: 5px;
+            height: 5px;
+            border-left: 2px solid #FFFFFF;
+            border-bottom: 2px solid #ffffff;
+            
+            transform: translate(-50%, -50%) rotate(225deg);
+        }
+
+        &::before{
+            content: "ОТПРАВИТЬ";
+            font-family: var(--font-family-bold);
+            display: flex;
+            padding-left: 18px;
+            font-size: 12px;
+            line-height: 24px;
+            letter-spacing: -0.15px;
+            text-align: right;
+            color: #FFFFFF;
+        }
+    }
+}

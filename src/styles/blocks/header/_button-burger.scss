@@ -1,0 +1,21 @@
+@use '../../helpers/' as *;
+.button-burger
+{
+    @include reset-button;
+    position: relative;
+    cursor: pointer; 
+    width: 50%;
+    height: 2px;
+    background-color: #fff;
+    border-radius: 5px;
+    
+    &::after{
+        @include abs-center;
+        content: '';
+        width: 50%;
+        height: 2px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 -8px #fff, 0 8px #fff;
+    }
+}

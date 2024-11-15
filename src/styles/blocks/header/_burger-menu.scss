@@ -1,0 +1,135 @@
+@use '../../helpers/' as *;
+
+.burger-menu{
+    position: relative;
+
+    &__header{
+        display: flex;
+        align-items: center;
+    }
+
+    &__body{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 320px;
+        height: 100vh;
+        background-color: #ffffff;
+        z-index: 6;
+        border-left: 1px solid #D9FFF5;
+    }
+
+    &__button-close{
+        margin-left: 16px;
+        margin-right: 16px;
+        margin-top: 24px;
+        margin-bottom: 28px;
+    }
+
+    &__search{
+        @include reset-button;
+
+        margin-left: auto;
+        margin-right: 16px;
+        margin-top: 24px;
+        margin-bottom: 28px;
+
+        & img{
+            position: absolute;
+            translate: -50% -50%;
+        }
+    }
+
+    &__content{
+        display: inline-block;
+
+        margin-left: 16px;
+
+        font-family: var(--font-family-midle);
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        color: var(--color-main-text);
+    }
+
+    &__main-menu{
+        list-style: none;
+        margin-bottom: 32px;
+
+        & a{
+            color: var(--color-main-text);        
+        }
+
+        & li:not(:last-child){
+            margin-bottom: 24px;
+        }
+    }
+
+    &__active{ 
+
+        & a{
+            color: var(--color-alt-text);
+        }
+
+        &::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 32px;
+            border-radius: 0 25px 25px 0;
+            background: #41F6D7;
+        }
+    }
+
+    &__contacts{
+        margin-bottom: 8px;
+    }
+
+    &__call, &__chat, &__profile{
+        @include reset-button;
+        margin-bottom: 16px;
+
+        & img{
+            position: absolute;
+            translate: -50% -50%;
+        }
+
+        &:not(:last-child){
+            margin-right: 16px;
+        }
+    }
+
+    &__email{
+        display: flex;
+        margin-bottom: 12px;
+
+    }
+
+    &__number{
+        font-family: var(--font-family-bold);
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: -0.6px;
+    }
+
+    &__lang{
+
+        & button{
+            @include reset-button;
+
+            font-family: var(--font-family-midle);
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: -0.2px;
+
+        }
+
+        &_active{
+            color: var(--color-alt-text);
+        }
+    }
+
+
+}

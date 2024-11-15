@@ -1,0 +1,29 @@
+.footer{
+
+    background-color: var(--color-background);
+    border-top: 1px solid #D9FFF5;
+
+    &__content{
+
+        display: flex;
+        flex-direction: column;
+
+        & p{
+            font-family: var(--font-family-regular);
+            font-size: 14px;
+            line-height: 16px;
+            color: var(--color-alt-text);
+            margin-bottom: 16px;
+            text-align: center;
+
+            &:first-child{
+                margin-left: 51px;
+                margin-right: 51px;
+                margin-top: 16px;
+                
+            }
+        }
+
+
+    }
+}
