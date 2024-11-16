@@ -5,14 +5,13 @@
 @use 'utilis';
 
 /*Стили блока <header>*/
-@use 'blocks/header/burger-menu';
+@use "blocks/burger-menu";
 
 @use 'blocks/header/button-close-popup';
 @use 'blocks/header/popup-chat';
 @use 'blocks/header/popup-call';
 
 @use 'blocks/header/button-cross';
-@use 'blocks/header/mobile-overlay';
 @use 'blocks/header/button-profile';
 @use 'blocks/header/button-chat';
 @use 'blocks/header/button-call';

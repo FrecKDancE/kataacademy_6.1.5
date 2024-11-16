@@ -37,14 +37,8 @@ read_more_button.addEventListener('click', function() {
         slide.setAttribute('id', 'hidden');
       }
     }
-    else if (window.innerWidth >= 1016 && window.innerWidth < 1392){
+    else if (window.innerWidth >= 1016){
       const image_slide = document.querySelectorAll('.image-slider__slide:not(:nth-child(-n +8))');
-      for (let slide of image_slide){
-        slide.setAttribute('id', 'hidden');
-      }
-    }
-    else if (window.innerWidth >= 1392){
-      const image_slide = document.querySelectorAll('.image-slider__slide:not(:nth-child(-n +10))');
       for (let slide of image_slide){
         slide.setAttribute('id', 'hidden');
       }
@@ -75,14 +69,8 @@ function hidden (){
         slide.setAttribute('id', 'hidden');
       } 
     }
-    if (window.innerWidth >= 1016 && window.innerWidth < 1392){
+    if (window.innerWidth >= 1016){
       const image_slide = document.querySelectorAll('.image-slider__slide:not(:nth-child(-n +8))');
-      for (let slide of image_slide){
-        slide.setAttribute('id', 'hidden');
-      }
-    }
-    if (window.innerWidth >= 1392){
-      const image_slide = document.querySelectorAll('.image-slider__slide:not(:nth-child(-n +10))');
       for (let slide of image_slide){
         slide.setAttribute('id', 'hidden');
       }

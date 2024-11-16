@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kata Academy 6.1.5</title>
 </head>
+
 <body>
     <header class="header">
         <div class="header__left-side">
@@ -107,36 +108,39 @@
             </div>
         </section>
 
-        <section class="header__burger-menu burger-menu">
-            <div class="burger-menu__body">
-                <div class="burger-menu__header">
-                    <button class="burger-menu__button-close button button-close" type="button"></button>
-                    <a href="/" class="burer-menu__logo">
-                        <img 
-                            class="logo__image" 
-                            src="./images/logo.svg" 
-                            alt="CPS" 
-                            width="97" height="51">
-                    </a>
-                    <button class="burger-menu__search button" type="button"><img src="./images/search.svg" alt=""></button>
-                </div> 
-                <div class="burger-menu__content">
-                    <ul class="burger-menu__main-menu">
-                        <li class="burger-menu__active"><a href="#">Ремонт техники</a></li>
-                        <li><a href="#">Услуги и сервисы</a></li>
-                        <li><a href="#">Корпоративным клиентам</a></li>
-                        <li><a href="#">Продавцам техники</a></li>
-                        <li><a href="#">Партнерам</a></li>
-                        <li><a href="#">Производителям</a></li>
-                        <li><a href="#">Наши сервисные центры</a></li>
-                        <li><a href="#">Контакты</a></li>
-                    </ul>
-                    <div class="burger-menu__contacts">
-                        <div class="burger-menu__contacts-buttons">
-                            <button class="burger-menu__call button button-burger-call" type="button"><img src="./images/call.svg"></button>
-                            <button class="burger-menu__chat button button-burger-chat" type="button"><img src="./images/chat.svg"></button>
-                            <button class="burger-menu__profile button" type="button"><img src="./images/profile.svg"></button>
-                        </div>
+
+    </header>
+
+    <nav class="burger-menu">
+        <div class="burger-menu__body">
+            <div class="burger-menu__header">
+                <button class="burger-menu__button-close button button-close" type="button">
+                    <span class="visually-hidden">Close navigation menu</span>
+                </button>
+                <a href="/" class="burger-menu__logo">
+                    <img 
+                        src="./images/logo.svg" 
+                        alt="CPS" 
+                        width="97" height="51">
+                </a>
+                <button class="burger-menu__search button" type="button"><img src="./images/search.svg" alt=""></button>
+            </div> 
+            <div class="burger-menu__content">
+                <ul class="burger-menu__main-menu">
+                    <li class="burger-menu__active"><a href="#">Ремонт техники</a></li>
+                    <li><a href="#">Услуги и сервисы</a></li>
+                    <li><a href="#">Корпоративным клиентам</a></li>
+                    <li><a href="#">Продавцам техники</a></li>
+                    <li><a href="#">Партнерам</a></li>
+                    <li><a href="#">Производителям</a></li>
+                    <li><a href="#">Наши сервисные центры</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+                <div class="burger-menu__contacts">
+                    <div class="burger-menu__contacts-buttons">
+                        <button class="burger-menu__call button button-burger-call" type="button"><img src="./images/call.svg"></button>
+                        <button class="burger-menu__chat button button-burger-chat" type="button"><img src="./images/chat.svg"></button>
+                        <button class="burger-menu__profile button" type="button"><img src="./images/profile.svg"></button>
                         <span class="burger-menu__email">mail@cps.com</span>
                         <span class="burger-menu__number">8 800 890 8900</span>
                     </div>
@@ -147,9 +151,8 @@
                     </div>
                 </div>
             </div>
-
-        </section>
-    </header>
+        </div>
+    </nav>
 
     <main class="content">
         <div class="content__title title">
@@ -327,50 +330,48 @@
                     <div class="fourth-block__pagination swiper-pagination"></div>
                 </div>
                 <div class="fourth-block__table-out">
-                    <div class="fourth-block__table-in">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Ремонтные услуги</th>
-                                    <th>Цена</th>
-                                    <th>Срок</th>
-                                    <th></th>
-                                </tr>
-                            </thead>
-                            <tbody class="fourth-block__tbody">
-                                <tr>
-                                    <td class="fourth-block__border-top-left">Диагностика</td>
-                                    <td>Бесплатно</td>
-                                    <td>30 мин</td>
-                                    <td class="fourth-block__border-top-right"><button class="fourth-block__icgo"></button></td>
-                                </tr>
-                                <tr>
-                                    <td>Замена дисплея</td>
-                                    <td>1 000 ₽</td>
-                                    <td>30-120 мин</td>
-                                    <td><button class="fourth-block__icgo"></button></td>
-                                </tr>
-                                <tr>
-                                    <td>Замена полифонического динамика</td>
-                                    <td>1 000 ₽</td>
-                                    <td>30-120 мин</td>
-                                    <td><button class="fourth-block__icgo"></button></td>
-                                </tr>
-                                <tr>
-                                    <td>Тестирование с выдачей технического заключения</td>
-                                    <td>1 000 ₽</td>
-                                    <td>30-120 мин</td>
-                                    <td><button class="fourth-block__icgo"></button></td>
-                                </tr>
-                                <tr>
-                                    <td class="fourth-block__border-bottom-left">Замена программного обеспечения</td>
-                                    <td>1 000 ₽</td>
-                                    <td>30-120 мин</td>
-                                    <td class="fourth-block__border-bottom-right"><button class="fourth-block__icgo"></button></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Ремонтные услуги</th>
+                                <th>Цена</th>
+                                <th>Срок</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody class="fourth-block__tbody">
+                            <tr>
+                                <td class="fourth-block__border-top-left">Диагностика</td>
+                                <td>Бесплатно</td>
+                                <td>30 мин</td>
+                                <td class="fourth-block__border-top-right"><button class="fourth-block__icgo"></button></td>
+                            </tr>
+                            <tr>
+                                <td>Замена дисплея</td>
+                                <td>1 000 ₽</td>
+                                <td>30-120 мин</td>
+                                <td><button class="fourth-block__icgo"></button></td>
+                            </tr>
+                            <tr>
+                                <td>Замена полифонического динамика</td>
+                                <td>1 000 ₽</td>
+                                <td>30-120 мин</td>
+                                <td><button class="fourth-block__icgo"></button></td>
+                            </tr>
+                            <tr>
+                                <td>Тестирование с выдачей технического заключения</td>
+                                <td>1 000 ₽</td>
+                                <td>30-120 мин</td>
+                                <td><button class="fourth-block__icgo"></button></td>
+                            </tr>
+                            <tr>
+                                <td class="fourth-block__border-bottom-left">Замена программного обеспечения</td>
+                                <td>1 000 ₽</td>
+                                <td>30-120 мин</td>
+                                <td class="fourth-block__border-bottom-right"><button class="fourth-block__icgo"></button></td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
                 <div class="fourth-block__above-price">
                     <p>Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную услугу. Для получения коммерческого предложения на постоянное обслуживание, оставьте заявку.</p>
