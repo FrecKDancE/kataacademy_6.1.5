@@ -37,14 +37,8 @@ new Swiper(".species-slider", {
           slide.setAttribute('id', 'hidden');
         }
       }
-      else if (window.innerWidth >= 1016 && window.innerWidth < 1392){
+      else if (window.innerWidth >= 1016){
         const species_slide = document.querySelectorAll('.species-slider__slide:not(:nth-child(-n +4))');
-        for (let slide of species_slide){
-          slide.setAttribute('id', 'hidden');
-        }
-      }
-      else if (window.innerWidth >= 1392){
-        const species_slide = document.querySelectorAll('.species-slider__slide:not(:nth-child(-n +5))');
         for (let slide of species_slide){
           slide.setAttribute('id', 'hidden');
         }
@@ -75,14 +69,8 @@ new Swiper(".species-slider", {
           slide.setAttribute('id', 'hidden');
         } 
       }
-      if (window.innerWidth >= 1016 && window.innerWidth < 1392){
+      if (window.innerWidth >= 1016){
         const species_slide = document.querySelectorAll('.species-slider__slide:not(:nth-child(-n +4))');
-        for (let slide of species_slide){
-          slide.setAttribute('id', 'hidden');
-        }
-      }
-      if (window.innerWidth >= 1392){
-        const species_slide = document.querySelectorAll('.species-slider__slide:not(:nth-child(-n +5))');
         for (let slide of species_slide){
           slide.setAttribute('id', 'hidden');
         }

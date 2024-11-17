@@ -23,8 +23,7 @@ module.exports = {
             patterns: [
                 {from: './images', to: 'images'}
             ]
-        })
-
+        }),
     ],
     devtool: "source-map",
     devServer: {
@@ -34,7 +33,7 @@ module.exports = {
         rules: [
             {
                 test: /\.css$/,
-                use: [MiniCSSExtractPlugin.loader, 'css-loader'],
+                use: [MiniCSSExtractPlugin.loader, 'css-loader', 'postcss-loader'],
             },
             {
                 test: /\.(png|jpg|svg|gif)$/,
@@ -52,7 +51,12 @@ module.exports = {
             },
             {
                 test: /\.s[ac]ss$/,
-                use: [MiniCSSExtractPlugin.loader, "css-loader", "sass-loader"]
+                use: [
+                    MiniCSSExtractPlugin.loader, // Extract css to separate file
+                    'css-loader', // translates CSS into CommonJS
+                    'postcss-loader', // parse CSS and add vendor prefixes to CSS rules
+                    'sass-loader', // compiles Sass to CSS, using Node Sass by default
+                  ],
 
             }
         ]

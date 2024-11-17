@@ -58,57 +58,6 @@
                 <img src="./images/checkstatus.svg" alt="">
             </button>
         </div>
-
-        <section class="header__popup-call popup-call">
-            <div class="popup-call__content">
-                <div class="popup-call_body">
-                    <button class="popup-call__button-close button-close button" type="button">
-                        <span class="visually-hidden">Close popup</span>
-                    </button>
-                    <div class="popup-call__title">
-                        <p>Заказать звонок</p>
-                    </div>
-                    <form>
-                        <input type="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Телефон X-XXX-XXX-XXX" required>
-                    </form>
-                    <div class="popup-call__above">
-                        <p>Нажимая “отправить”, вы даете согласие на <span>обработку персональных данных</span>
-                             и соглашаетесь с нашей <span>политикой конфиденциальности</span></p>
-                    </div>
-                    <button class="popup-call__icgo" type="button">
-                        <span class="visually-hidden">Send</span>
-                    </button>
-                </div>
-            </div>
-        </section>
-
-        <section class="header__popup-chat popup-chat">
-            <div class="popup-chat__content">
-                <div class="popup-chat_body">
-                    <button class="popup-chat__button-close button-close button" type="button">
-                        <span class="visually-hidden">Close popup</span>
-                    </button>
-                    <div class="popup-chat__title">
-                        <p>Обратная связь</p>
-                    </div>
-                    <form>
-                        <input type="text" placeholder="Имя" required>
-                        <input type="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Телефон X-XXX-XXX-XXX" required>
-                        <input type="email" pattern="@" placeholder="Электронная почта" required>
-                        <textarea type="text" rows="5" placeholder="Сообщение" required></textarea>
-                    </form>
-                    <div class="popup-chat__above">
-                        <p>Нажимая “отправить”, вы даете согласие на <span>обработку персональных данных</span>
-                             и соглашаетесь с нашей <span>политикой конфиденциальности</span></p>
-                    </div>
-                    <button class="popup-chat__icgo" type="button">
-                        <span class="visually-hidden">Send</span>
-                    </button>
-                </div>
-            </div>
-        </section>
-
-
     </header>
 
     <nav class="burger-menu">
@@ -392,5 +341,54 @@
             <p>Информация, размещенная на данной странице, не является публичной офертой</p>
         </div>
     </footer>
+
+    <section class="popup-call">
+        <div class="popup-call__content">
+            <div class="popup-call__body">
+                <button class="popup-call__button-close button-close button" type="button">
+                    <span class="visually-hidden">Close popup</span>
+                </button>
+                <div class="popup-call__title">
+                    <p>Заказать звонок</p>
+                </div>
+                <form>
+                    <input type="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Телефон X-XXX-XXX-XXX" required>
+                </form>
+                <div class="popup-call__above">
+                    <p>Нажимая “отправить”, вы даете согласие на <span>обработку персональных данных</span>
+                         и соглашаетесь с нашей <span>политикой конфиденциальности</span></p>
+                </div>
+                <button class="popup-call__icgo" type="button">
+                    <span class="visually-hidden">Send</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="popup-chat">
+        <div class="popup-chat__content">
+            <div class="popup-chat__body">
+                <button class="popup-chat__button-close button-close button" type="button">
+                    <span class="visually-hidden">Close popup</span>
+                </button>
+                <div class="popup-chat__title">
+                    <p>Обратная связь</p>
+                </div>
+                <form>
+                    <input type="text" placeholder="Имя" required>
+                    <input type="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Телефон X-XXX-XXX-XXX" required>
+                    <input type="email" pattern="@" placeholder="Электронная почта" required>
+                    <textarea type="text" rows="5" placeholder="Сообщение" required></textarea>
+                </form>
+                <div class="popup-chat__above">
+                    <p>Нажимая “отправить”, вы даете согласие на <span>обработку персональных данных</span>
+                         и соглашаетесь с нашей <span>политикой конфиденциальности</span></p>
+                </div>
+                <button class="popup-chat__icgo" type="button">
+                    <span class="visually-hidden">Send</span>
+                </button>
+            </div>
+        </div>
+    </section>
 </body>
 </html>

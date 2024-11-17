@@ -1,11 +1,13 @@
 const callButton = document.querySelector('.button-call');
 const chatButton = document.querySelector('.button-chat');
 
-const callPopup = document.querySelector('.header__popup-call');
-const chatPopup = document.querySelector('.header__popup-chat');
+const callPopup = document.querySelector('.popup-call');
+const chatPopup = document.querySelector('.popup-chat');
 
 const callClose = document.querySelector('.popup-call__button-close');
 const chatClose = document.querySelector('.popup-chat__button-close');
+
+console.log(callButton, callPopup)
 
 const body = document.body;
 

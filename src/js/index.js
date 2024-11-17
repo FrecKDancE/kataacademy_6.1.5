@@ -8,3 +8,19 @@ import './popups.js';
 import './burger-menu.js'
 
 
+let header = document.querySelector('.header');
+if (window.innerWidth >= 1120){
+    header.classList.add('visually-hidden');
+}
+else{
+    header.classList.remove('visually-hidden');
+}
+
+window.addEventListener('resize', function(){
+    if (window.innerWidth >= 1120){
+        header.classList.add('visually-hidden');
+    }
+    else{
+        header.classList.remove('visually-hidden');
+    }
+})

@@ -3,8 +3,8 @@ const burgerButton = document.querySelector('.button-burger');
 const burgerCall = document.querySelector('.button-burger-call');
 const burgerChat = document.querySelector('.button-burger-chat')
 
-const callPopup = document.querySelector('.header__popup-call');
-const chatPopup = document.querySelector('.header__popup-chat');
+const callPopup = document.querySelector('.popup-call');
+const chatPopup = document.querySelector('.popup-chat');
 
 const callClose = document.querySelector('.popup-call__button-close');
 const chatClose = document.querySelector('.popup-chat__button-close');
