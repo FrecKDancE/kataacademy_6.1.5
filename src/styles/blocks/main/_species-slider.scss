@@ -1,0 +1,68 @@
+@use '../../helpers/' as *;
+
+.species-slider{
+
+    &__slide{
+        width: 240px !important;
+        height: 160px !important;
+
+        padding-top: 16px;
+        padding-left: 16px;
+
+        background-color: #FFFFFF;
+        border: 1px solid #EAEAEA;
+        border-radius: 6px;
+
+        & p {
+            font-family: var(--font-family-midle);
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: -0.2px;
+            color: var(--color-main-text);
+        }
+
+        @include tablet_768{
+            width: 224px !important;
+            margin-bottom: 16px;
+        }
+
+        @include desktop{
+            width: 240px !important;
+        }
+    }
+
+    &__icgo{
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        bottom: 16px;
+        right: 16px;
+
+        background-color: #FFFFFF;
+        border-radius: 50%; 
+        border: 2px solid #FF3E79; 
+
+        &::after{
+            position: absolute;
+            top: 50%;
+            left: 45%;
+            content: '';
+            display: block;
+            width: 7px;
+            height: 7px;
+            border-left: 3px solid #FF3E79;
+            border-bottom: 3px solid #FF3E79;
+            
+            transform: translate(-50%, -50%) rotate(225deg);
+        }
+    }
+
+    &__wrapper{
+        @include tablet_768 {
+            flex-wrap: wrap;
+            width: auto !important;
+            margin-bottom: 8px;
+        }
+
+    }
+}

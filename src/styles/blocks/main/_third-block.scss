@@ -1,0 +1,86 @@
+@use '../../helpers/' as *;
+
+.third-block{
+    border-top: 1px solid #D9FFF5;
+    width: 100%;
+    margin-bottom: 24px;
+
+    &__header{
+        margin-left: 16px;
+        margin-bottom: 16px;
+        background: var(--linear-gradient);
+
+        & p{
+            font-family: var(--font-family-regular);
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: -0.2px;
+            color: var(--color-alt-text);
+            padding-top: 16px;
+            padding-bottom: 16px;
+        }
+
+        @include tablet_768{
+            margin-left: 24px;
+            margin-bottom: 24px;
+        }
+
+        @include desktop{
+            margin-left: 32px;
+            margin-bottom: 40px;
+        }
+    }
+
+    &__body{
+        margin-left: 16px;
+
+        @include tablet_768{
+            margin-left: 24px;
+        }
+
+        @include desktop{
+            margin-left: 32px;
+        }
+    }
+
+    &__read-more{
+
+        &_visible{
+            display: none;
+
+            @include tablet_768{
+                display: block;
+            }
+        }
+    }
+
+    &__button{
+        @include reset-button;
+        font-family: var(--font-family-midle);
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+    }
+
+    &__icon{
+        margin-left: 24px;
+        margin-right: 8px;
+
+        @include tablet_768{
+            margin-left: 9px;
+        }
+    }
+
+    &__pagination{
+        position: initial !important;
+        margin-top: 16px;
+    }
+
+    @include tablet_768{
+        margin-bottom: 32px;
+    }
+
+    @include desktop{
+        margin-bottom: 50px;
+    }
+}

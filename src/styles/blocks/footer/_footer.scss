@@ -1,0 +1,65 @@
+@use '../../helpers/' as *;
+
+.footer{
+
+    background-color: var(--color-background);
+    border-top: 1px solid #D9FFF5;
+
+    &__content{
+
+        display: flex;
+        flex-direction: column;
+
+        & p{
+            font-family: var(--font-family-regular);
+            font-size: 14px;
+            line-height: 16px;
+            color: var(--color-alt-text);
+            margin-bottom: 16px;
+            text-align: center;
+
+            &:first-child{
+                margin-left: 51px;
+                margin-top: 16px;
+                
+            }
+        }
+
+        @include tablet_768{
+            display: flex;
+            flex-direction: row;
+            align-items: baseline;
+            justify-content:space-between;
+
+            & p{
+                width: 33%;
+                &:first-child{
+                    margin-left: 24px;
+                    margin-top: 32px; 
+                    margin-right: 35px;
+                    text-align: left;
+                    
+                }
+
+                &:nth-child(2){
+                    white-space: nowrap;
+                    margin-right: 40px;
+                }
+
+                &:last-child{
+                    text-align: right;
+                    margin-right: 24px;
+                    margin-bottom: 25px;
+                    margin-top: 32px;
+                }
+            }
+        }
+
+
+    }
+
+    @include desktop{
+        width: 1120px;
+        margin-left: auto;
+    }
+}

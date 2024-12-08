@@ -1,0 +1,10 @@
+@use '../../helpers/' as *;
+
+.button-profile{
+    @include reset-button;
+    
+    & img{
+        position: absolute;
+        translate: -50% -50%;
+    }
+}

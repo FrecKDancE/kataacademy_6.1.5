@@ -1,0 +1,66 @@
+@use '../../helpers/' as *;
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #D9FFF5;
+
+    &__left-side,
+    &__right-side{
+        display: flex;
+        align-items: center;
+    }
+
+    &__button-burger{
+        margin: 24px 16px;
+        order: 0;
+
+        @include tablet_768 {
+            margin: 24px 0 24px 24px;
+        }
+    }
+
+    &__logo{
+        margin-right: 17px;
+        order: 1;
+
+        @include tablet_768 {
+            order: 2;
+            margin: 0;
+        }
+    }
+
+    &__divider{
+        margin-right: 20px;
+        order: 2;
+
+        @include tablet_768 {
+            order: 1;
+            margin: 0 20px;
+        }
+    }
+
+    &__contacts{
+        display: none;
+
+        @include tablet_768 {
+            display: flex;
+            align-items: center;      
+        }
+    }
+
+    &__button-call,
+    &__button-chat{
+        margin: 24px 16px 24px 0;
+    }
+
+    &__button-repair,
+    &__button-checkstatus{
+        margin: 24px 16px 24px 0;
+    }
+}
+
+.popup--show{
+    display: block;
+    position: fixed;
+}

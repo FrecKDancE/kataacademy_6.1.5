@@ -1,0 +1,28 @@
+@use '../../helpers/' as *;
+.button-close
+{
+    @include reset-button;
+    position: relative;
+    
+    &::after{
+        @include abs-center;
+        content: '';
+        position: absolute;
+        width: 50%;
+        height: 2px;
+        background-color: #fff;
+        border-radius: 1px;
+        rotate: -45deg;
+    }
+
+    &::before{
+        @include abs-center;
+        content: '';
+        position: absolute;
+        width: 50%;
+        height: 2px;
+        background-color: #fff;
+        border-radius: 1px;
+        rotate: 45deg;
+    }
+}

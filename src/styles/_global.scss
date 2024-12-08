@@ -1,0 +1,42 @@
+@use '../styles/helpers/' as *;
+
+:root{
+    --color-background: #F8F8F8;
+    --color-button: #FF3E79;
+    --color-main-text: #1B1C21;
+    --color-alt-text: #7E7E82;
+    --color-active-slide: #B5B6BC;
+    --color-inactive-slide: #DDDDDD;
+
+
+    --font-family-midle: 'TT Lakes-Medium', sans-serif;
+    --font-family-regular: 'TT Lakes-Regular', sans-serif;
+    --font-family-bold: 'TT Lakes-Bold', sans-serif;
+
+    --linear-gradient: linear-gradient(90deg, #F8F8F8 1.39%, #FFFFFF 100%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--font-family-midle);
+    background-color: var(--color-background);
+    font-weight: 400;
+    font-size: 14px;
+
+    @include desktopL{
+        display: flex;
+        flex-direction: column;
+        
+        width: 1440px;
+        height: 100%;
+        margin: 0 auto;
+        position: relative;
+    }
+
+}
+

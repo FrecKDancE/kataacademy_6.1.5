@@ -1,0 +1,90 @@
+@use '../../helpers/' as *;
+
+.price-slider{
+
+    &__slide{
+        display: flex;
+        width: 260px !important;
+        height: 200px !important;
+
+        background-color: #FFFFFF;
+        border: 1px solid #EAEAEA;
+        border-radius: 6px;
+
+        margin-left: 16px;
+    }
+
+    &__body{
+        
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: 16px;
+        flex-grow: 1;
+        
+        & p{
+            display: flex;
+            flex-grow: 1;
+        }
+
+        & p:nth-child(2n-1) {
+            font-family: var(--font-family-regular);
+            font-size: 14px;
+            line-height: 16px;
+            color: var(--color-alt-text);
+            padding-bottom: 4px;
+        }
+
+        & p:nth-child(2n){
+            font-family: var(--font-family-regular);
+            font-size: 14px;
+            line-height: 18px;
+            letter-spacing: 0.2px;
+            color: var(--color-main-text);
+            margin-bottom: 16px;
+        }
+    }
+
+    &__icgo{
+        @include reset-button;
+        position: absolute;
+        width: 119px;
+        height: 32px;
+        
+        bottom: 16px;
+        right: 16px;
+
+        background-color: #FF3E79;
+        border-radius: 16px; 
+
+        &::after{
+            position: absolute;
+            top: 50%;
+            right: 16px;
+            content: '';
+            display: block;
+            width: 5px;
+            height: 5px;
+            border-left: 2px solid #FFFFFF;
+            border-bottom: 2px solid #ffffff;
+            
+            transform: translate(-50%, -50%) rotate(225deg);
+        }
+
+        &::before{
+            content: "ЗАКАЗАТЬ";
+            font-family: var(--font-family-bold);
+            display: flex;
+            padding-left: 12px;
+            font-size: 12px;
+            line-height: 24px;
+            letter-spacing: -0.15px;
+            text-align: right;
+            color: #FFFFFF;
+        }
+    }
+
+    @include tablet_768{
+        display: none !important;
+    }
+}

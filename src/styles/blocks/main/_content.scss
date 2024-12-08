@@ -1,0 +1,75 @@
+@use '../../helpers/' as *;
+
+.content{
+    background-color: var(--color-background);
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+
+    &__title{
+        display: flex;
+        
+        width: 100%;
+        margin: 24px 0 24px 24px;
+
+        &>p{
+            font-family: var(--font-family-bold);
+            font-size: 28px;
+            line-height: 40px;
+            letter-spacing: -0.6px;
+            color: var(--color-main-text)
+        }
+        
+        &::before{
+            content: '';
+            position: absolute;
+            left: 0;
+            width: 4px;
+            height: 40px;
+            background-color: #41F6D7;
+        }
+
+        @include tablet_768{
+            margin: 24px 0 32px 24px;
+        }
+        
+        @include desktop{
+            margin: 42px 0 8px 35px;
+        }
+    }
+
+    &__right-side{
+        display: none;
+        margin-left: auto;
+
+        & p{
+            margin-right: 8px;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: -0.2px;
+            color: var(--color-main-text)
+        }
+        @include desktop{
+            display: flex;
+        }
+    }
+
+    &__repair{
+        display: flex;
+        align-items: center;
+        margin-right: 32px;
+
+    }
+
+    &__checkstatus{
+        display: flex;
+        align-items: center;
+        margin-right: 30px;
+
+    }
+
+    @include desktop{
+        width: 1120px;
+        margin-left: auto;
+    }
+}

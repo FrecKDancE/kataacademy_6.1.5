@@ -1,0 +1,38 @@
+/*Основные стили*/
+@use 'fonts';
+@use 'normalize';
+@use 'global';
+@use 'utilis';
+
+/*Стили блока <header>*/
+@use "blocks/burger-menu";
+
+@use 'blocks/header/button-close-popup';
+@use 'blocks/header/popup-chat';
+@use 'blocks/header/popup-call';
+
+@use 'blocks/header/button-cross';
+@use 'blocks/header/button-profile';
+@use 'blocks/header/button-chat';
+@use 'blocks/header/button-call';
+@use 'blocks/header/button-checkstatus';
+@use 'blocks/header/button-repair';
+@use 'blocks/header/button-burger';
+@use 'blocks/header/button';
+@use 'blocks/header/divider';
+@use 'blocks/header/header';
+
+/*Стили блока <main>*/
+@use 'blocks/main/price-slider';
+@use 'blocks/main/fourth-block';
+@use 'blocks/main/species-slider';
+@use 'blocks/main/third-block';
+@use 'blocks/main/brands-slider';
+@use 'blocks/main/second-block';
+@use 'blocks/main/first-block';
+@use 'blocks/main/services-slider';
+@use 'blocks/main/content';
+
+/*Стили блока <footer>*/
+
+@use 'blocks/footer/footer';

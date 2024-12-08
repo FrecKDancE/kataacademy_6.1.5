@@ -1,0 +1,59 @@
+{
+  "name": "kataacademy_6.1.5",
+  "version": "1.0.0",
+  "description": "Practice 6.1.5",
+  "repository": "https://github.com/FrecKDancE/kataacademy-6.1.5.git",
+  "private": true,
+  "scripts": {
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "watch": "webpack --mode development --watch",
+    "start": "webpack-dev-server --mode development --open",
+    "deploy": "gh-pages -d dist"
+  },
+  "keywords": [
+    "JS",
+    "HTML",
+    "Webpack",
+    "SCSS"
+  ],
+  "author": "Igor Korchunov",
+  "license": "ISC",
+  "browserslist": [
+    "last 2 versions",
+    "Firefox ESR",
+    "not OperaMini All",
+    "not dead"
+  ],
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^12.0.2",
+    "css-loader": "^7.1.2",
+    "dart-sass": "^1.25.0",
+    "file-loader": "^6.2.0",
+    "gh-pages": "^6.2.0",
+    "html-webpack-plugin": "^5.6.3",
+    "mini-css-extract-plugin": "^2.9.2",
+    "postcss": "^8.4.49",
+    "postcss-loader": "^8.1.1",
+    "sass": "^1.80.6",
+    "sass-loader": "^16.0.3",
+    "style-loader": "^4.0.0",
+    "swiper": "^11.1.14",
+    "webpack": "^5.96.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.1.0",
+    "xml-loader": "^1.2.1"
+  },
+  "engineStrict": true,
+  "engines": {
+    "node": "~14.18.3",
+    "npm": "~6.14.15"
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  }
+}

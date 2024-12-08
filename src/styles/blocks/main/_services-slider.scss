@@ -1,0 +1,53 @@
+@use '../../helpers/' as *;
+.services-slider{
+
+    margin-bottom: 24px;
+
+    .services-slider__slide{
+        width: auto;
+        display: flex;
+        align-items: center;
+        margin-left: 16px;
+        padding: 8px;
+        cursor: pointer;
+
+        & a{
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: -0.2px;
+            color: var(--color-alt-text);
+        }
+
+        &--active{
+            background-color: #fff;
+            border: 2px solid #B8FFEC;
+            border-radius: 6px;
+        }
+
+        @include tablet_768{
+            margin-left: 24px;
+        }
+        
+        @include desktop{
+            margin-left: 35px;
+        }
+
+
+    }
+    .services-slider__wrapper {
+        @include desktop{
+            display: flex;
+            flex-wrap: wrap;
+            height: auto;
+
+        }
+    }
+
+    @include tablet_768{
+        margin-bottom: 32px;
+    }
+
+    @include desktop{
+        margin-bottom: 16px;
+    }
+}
